@@ -1,0 +1,21 @@
+print("Welcome to bmi calculator!!!!!")
+name = input("Nama lu siapa brok? ")
+print("")
+height = float(input(f"tinggi lu brp meter {name}🧍‍? (pake titik jgn pake koma, cth 1.75)\n")) 
+print("")
+weight = int(input(f"berat lu brp kg {name}⚖️ ?\n"))
+print("")
+bmi = round(weight / height**2, 2)
+
+if bmi < 18.5:
+  print(f"BMI lu {bmi} dan luu underweight.")
+elif bmi < 25:
+  print(f"BMI lu {bmi} dan berat badan luu normal, congratsss.")
+elif bmi < 30:
+  print(f"BMI lu {bmi} dan luu sedikit overweight, its ok.")
+elif bmi < 35:
+  print(f"BMI lu {bmi} dan luu obese.")
+else:
+  print(f"BMI lu {bmi} dan luu clinically obese.")
+print("")
+print("tengs dah mo nyobain calculator gua")
